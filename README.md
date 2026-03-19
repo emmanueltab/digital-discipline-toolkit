@@ -4,29 +4,20 @@ A practical guide for anyone who wants to take back control of their browser and
 
 ## What's Inside
 
-### 1. DNS Server Setup
-Configure OpenDNS to block entire categories of content at the network level before they even reach your device.
-
-### 2. Hosts File Blocklist
-A comprehensive `/etc/hosts` blocklist covering explicit content, social media, and more. Works system-wide across all browsers and apps.
-
-### 3. Firefox Session Limiter
-Replace the Firefox launcher with a wrapper script that forces intentional browsing sessions. Set a time limit before Firefox opens, get warned when time is running out, and enforce a cooldown period between sessions.
-
-### 4. Local Tools (Browser Replacements)
-Replace common browser habits with local CLI tools:
-- **Claude Desktop** — AI assistant without a browser
-- **cmus** — Terminal music player
-- **yt-dlp** — Download audio/video locally
-- **gh CLI** — GitHub without a browser
-
-### 5. Android App Removal
-Remove or disable apps on Android devices using ADB to eliminate mobile access points.
+| Section | Description | Difficulty |
+|---------|-------------|------------|
+| [1. DNS Setup](dns.md) | Block content at the network and device level | Easy |
+| [2. Hosts File Blocklist](hosts-blocklist.md) | Block domains system-wide across all browsers and apps | Easy |
+| [3. Android App Removal](android-app-removal.md) | Remove or disable apps on Android via ADB | Medium |
+| [4. Local Tools](local-tools.md) | Replace browser habits with CLI and desktop tools | Medium |
+| [5. Browser Session Limiter](firefox-session-limiter.md) | Force intentional browsing sessions with hard lockouts | Hard |
 
 ## Philosophy
-Every layer removes a reason to open a browser. The goal is not to make the internet inaccessible, but to make access intentional.
+
+Every layer removes a reason to open a browser. The goal is not to make the internet inaccessible, but to make access intentional. Start with the easiest layers and work your way up.
 
 ## Coming Soon
-- Study session enforcer (system-wide break timer)
+
+- Study session enforcer — system-wide break timer
 - Automated music downloader script
 - Full CLI workflow guide
